@@ -13,6 +13,7 @@ tools:context=".MainActivity">
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:background="@drawable/back2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,20 +27,31 @@ tools:context=".MainActivity">
             android:textSize="40sp" />
 
         <EditText
-            android:id="@+id/cube_radius_input"
+            android:id="@+id/cylinder_radius_input"
             android:layout_width="408dp"
             android:layout_height="90dp"
             android:hint="Enter a radius"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
             android:paddingHorizontal="10dp"
             android:textSize="24sp" />
         <EditText
-            android:id="@+id/cube_height_input"
+            android:id="@+id/cylinder_height_input"
             android:layout_width="408dp"
             android:layout_height="90dp"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
             android:hint="Enter a height"
             android:paddingHorizontal="10dp"
             android:textSize="24sp" />
-
+        <TextView
+            android:id="@+id/cylinder_result"
+            android:layout_width="match_parent"
+            android:layout_height="193dp"
+            android:gravity="center"
+            android:background="@color/teal_200"
+            android:text="Result"
+            android:textSize="40sp" />
         <Button
             android:id="@+id/cylinder_calculate"
             android:layout_width="match_parent"

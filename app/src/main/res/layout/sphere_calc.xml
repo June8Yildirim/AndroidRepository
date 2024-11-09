@@ -26,12 +26,23 @@ tools:context=".MainActivity">
             android:textSize="40sp" />
 
         <EditText
-            android:id="@+id/cube_input"
+            android:id="@+id/sphere_radius"
             android:layout_width="408dp"
             android:layout_height="90dp"
             android:hint="Enter a radius"
             android:paddingHorizontal="10dp"
             android:textSize="24sp" />
+
+
+        <TextView
+            android:id="@+id/sphere_result"
+            android:layout_width="match_parent"
+            android:layout_height="193dp"
+            android:background="@color/teal_200"
+            android:gravity="center"
+            android:text="Result"
+            android:textSize="40sp" />
+
         <Button
             android:id="@+id/sphere_calculate"
             android:layout_width="match_parent"
