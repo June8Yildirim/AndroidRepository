@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="391dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Volume Calculator"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/sphere_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/sphere_layout"
+        android:layout_width="151dp"
+        android:layout_height="166dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/cube_layout"
+        app:layout_constraintEnd_toStartOf="@+id/cylinder_layout"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="sphereImage" />
+
+        <Button
+            android:id="@+id/btn_sphere_calculation"
+            android:layout_width="111dp"
+            android:layout_height="54dp"
+            android:gravity="center"
+            android:text="Sphere"
+            android:background="@color/teal_200"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cylinder_layout"
+        android:layout_width="136dp"
+        android:layout_height="163dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/sphere_layout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/sphere_layout"
+        app:layout_constraintTop_toTopOf="@+id/sphere_layout">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="cyclinderImage" />
+
+        <Button
+            android:id="@+id/btn_cylinder_calculation"
+            android:layout_width="111dp"
+            android:layout_height="54dp"
+            android:gravity="center"
+            android:text="Cylinder"
+            android:background="@color/teal_200"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cube_layout"
+        android:layout_width="150dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/prism_layout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/sphere_layout"
+        app:layout_constraintTop_toBottomOf="@+id/sphere_layout">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="cubeImage" />
+
+        <Button
+            android:id="@+id/btn_cube_calculation"
+            android:layout_width="111dp"
+            android:layout_height="54dp"
+            android:gravity="center"
+            android:text="Cube"
+            android:background="@color/teal_200"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/prism_layout"
+        android:layout_width="136dp"
+        android:layout_height="163dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/cylinder_layout"
+        app:layout_constraintTop_toTopOf="@+id/cube_layout">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="prismImage" />
+
+        <Button
+            android:id="@+id/btn_prism_calculation"
+            android:layout_width="111dp"
+            android:layout_height="54dp"
+            android:gravity="center"
+            android:text="Prism"
+            android:background="@color/teal_200"
+            android:textSize="20sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        android:id="@+id/prism_linearlayout"
+        android:layout_width="414dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="113dp"
+            android:gravity="center"
+            android:text="Prism Volume"
+            android:textSize="40sp" />
+
+        <EditText
+            android:id="@+id/prism_h_input"
+            android:layout_width="408dp"
+            android:layout_height="70dp"
+            android:hint="Enter a Height"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/prism_w_input"
+            android:layout_width="408dp"
+            android:layout_height="70dp"
+            android:hint="Enter a Width"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/prism_l_input"
+            android:layout_width="408dp"
+            android:layout_height="70dp"
+            android:hint="Enter a Length"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/prism_calculate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Calculate"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:background="@color/teal_700"
+            />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
