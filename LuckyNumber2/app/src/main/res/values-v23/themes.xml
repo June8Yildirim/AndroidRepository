@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.LuckyNumber" parent="Theme.Material3.DayNight">
+        <!-- Transparent system bars for edge-to-edge. -->
+<!--        <item name="android:navigationBarColor">@android:color/transparent</item>-->
+<!--        <item name="android:statusBarColor">@color/sky_blue</item>-->
+<!--        <item name="colorPrimary">@color/sky_blue</item>-->
+<!--        <item name="android:windowLightStatusBar">?attr/isLightTheme</item>-->
+    </style>
+<!--    <style name="Theme.LuckyNumber" parent="Base.Theme.LuckyNumber" />-->
+</resources>
