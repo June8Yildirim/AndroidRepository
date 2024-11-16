@@ -1,4 +1,5 @@
-package com.example.weatherapplication
+package com.example.shoppinglistapp.DataClass
+
 
 data class LocationData(
     val latitude: Double,

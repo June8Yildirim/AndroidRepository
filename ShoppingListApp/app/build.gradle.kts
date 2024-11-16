@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.secret)
 }
 
 android {
@@ -36,11 +37,11 @@ android {
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
 }
 
 dependencies {
-
     implementation(libs.androidx.navigation.compose)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     // ViewModel utilities for Compose
@@ -55,7 +56,9 @@ dependencies {
     implementation (libs.androidx.lifecycle.viewmodel.savedstate)
     // Image loading
     implementation(libs.coil.kt.coil.compose)
+    implementation(libs.maps.compose)
 
+    implementation(libs.play.services.location)
     implementation(libs.retrofit2.converter.gson)
     implementation(libs.coil.compose)
     implementation(libs.retrofit)
@@ -63,6 +66,8 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.play.services.maps)
     implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.recyclerview)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
     implementation(platform(libs.androidx.compose.bom))

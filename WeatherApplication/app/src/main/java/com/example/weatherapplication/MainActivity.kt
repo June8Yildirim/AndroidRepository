@@ -52,7 +52,7 @@ fun LocationDisplay(locationUtils: LocationHelper, viewModel: LocationViewModel,
     val address = location?.let {
         locationUtils.reverseGeoCodeLocation(location)
     }
-    var requestPermissionLauncher = rememberLauncherForActivityResult(
+    val requestPermissionLauncher = rememberLauncherForActivityResult(
         contract = ActivityResultContracts.RequestMultiplePermissions(),
         onResult = { permissions ->
             if (permissions[Manifest.permission.ACCESS_COARSE_LOCATION] == true

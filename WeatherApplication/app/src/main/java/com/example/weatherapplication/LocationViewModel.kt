@@ -3,6 +3,7 @@ package com.example.weatherapplication
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
+import com.example.weatherapplication.DataClass.LocationData
 
 class LocationViewModel : ViewModel() {
 
